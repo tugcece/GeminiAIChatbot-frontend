@@ -1,0 +1,246 @@
+.none {
+  display: none;
+}
+
+.main {
+  background-color: #141314;
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 115px;
+  max-height: 500px;
+  background-color: rgba(225, 225, 225, 0.7);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*Info And Input Screen*/
+.logo {
+  background-image: url("../../public/images/logoAI2.gif");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 3rem;
+  box-shadow: rgba(206, 181, 201, 0.22) 0px 14px 28px,
+    rgba(206, 181, 201, 0.22) 0px 10px 10px;
+}
+
+.newChatButton {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  border: none;
+  border-radius: 2rem;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding: 0.8rem 0.9rem;
+  box-shadow: rgba(206, 181, 201, 0.22) 0px 14px 28px,
+    rgba(206, 181, 201, 0.22) 0px 10px 10px;
+}
+
+.newChatButton span {
+  background: linear-gradient(to right, #4b6cfe, #6fb7fc);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.newChatIcon {
+  color: #4b6cfe;
+  font-size: large;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.title {
+  font-size: xx-large;
+  text-align: center;
+  background: linear-gradient(to right, #000, #9d67ef);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-wrap: wrap;
+  width: 50%;
+}
+
+.information {
+  width: 50%;
+  text-align: center;
+  padding: 2% 0;
+}
+
+.inputContainer {
+  height: 50px;
+  width: 90%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  background-color: white;
+  border-radius: 1rem;
+  margin-top: 32px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+  width: 90%;
+  height: 100%;
+  border: none;
+  padding: 15px;
+  resize: none !important;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.inputLogo {
+  width: 10%;
+  height: 100%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.enterButtonDisabled {
+  border: none;
+  right: 2%;
+  border-radius: 2rem;
+  cursor: pointer;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.2;
+  padding: 0.3rem 0.6rem;
+  cursor: auto;
+}
+
+.enterButtonActive {
+  border: none;
+  right: 2%;
+  border-radius: 2rem;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.3s ease;
+  background: linear-gradient(to left, #4b6cfe, #6fb7fc);
+  padding: 0.3rem 0.6rem;
+  transition: background 2s ease;
+}
+
+.enterButtonActive:hover {
+  background: linear-gradient(to right, #4b6cfe, #6fb7fc);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: background 2s ease;
+}
+
+/*Chat Screen*/
+
+/*Loading Part*/
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.typingAnimation {
+  overflow: hidden;
+  border-right: 0.1em solid #4b6cfe;
+  white-space: nowrap;
+  animation: typing 1s forwards;
+  width: 0;
+  font-size: large;
+  align-self: center;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+.icon {
+  color: white;
+  font-size: x-large;
+  margin-top: 0.1rem;
+}
+
+/*Chat Part*/
+.chat {
+  width: 83%;
+}
+
+.chat p {
+  margin: 4px 0px 5px 0px;
+  color: black;
+  font-weight: 400;
+  background: linear-gradient(to right, #000, #9d67ef);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.chatScreen {
+  height: 400px;
+  width: 90%;
+  overflow-y: scroll;
+  color: white;
+}
+.chatScreen ul {
+  list-style: none;
+  width: 100%;
+  padding-inline: 15px 15px;
+}
+
+.chatScreen ul li {
+  display: flex;
+  gap: 12px;
+  font-size: medium;
+  margin: 0px 0px 15px 0px;
+}
+
+.role {
+  font-weight: 400;
+}
+
+.chatLogo {
+  width: 30px;
+  height: 30px;
+  border-radius: 2rem;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .logo {
+    width: 60px;
+    height: 60px;
+  }
+  .inputLogo {
+    width: 50px;
+  }
+  .newChatButton span {
+    display: none !important;
+  }
+  .title {
+    width: 75%;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+}

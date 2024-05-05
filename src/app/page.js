@@ -126,7 +126,7 @@ export default function Home() {
                 className={styles.chatLogo}
               />
               <div className={styles.typingAnimation}>
-                I'm thinking. It'll only take a few seconds....
+                {'I\'m thinking. It\'ll only take a few seconds....'}
               </div>
             </div>
           )}
@@ -139,8 +139,7 @@ export default function Home() {
               Hello there, human! How can I assist you?
             </p>
             <p className={styles.information}>
-              I'm here to help you. Just ask me anything, and I'll do my best to
-              give you a helpful answer.
+                {'I\'m here to help you. Just ask me anything, and I\'ll do my best to give you a helpful answer.'}
             </p>
           </div>
         </>

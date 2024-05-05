@@ -1,7 +1,9 @@
 It was designed using the Gemini AI API.
 The front-end part is coded with Next.js.
 
+
 npm install 
+
 npm i react-icons
 
 

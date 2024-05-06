@@ -13,7 +13,6 @@ export default function Home() {
   const [displayRegions, setDisplayRegions] = useState(false);
   const [chatHistory, setChatHistory] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(false);
 
   useEffect(() => {
     scroll();
@@ -52,7 +51,6 @@ export default function Home() {
         ]);
       } catch (error) {
         setLoading(false);
-        setError(true);
         console.error("Hata:", error);
       } finally {
         setLoading(false);

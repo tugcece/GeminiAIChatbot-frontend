@@ -4,7 +4,7 @@ It was designed using the Gemini AI API.
 The front-end part is coded with Next.js.
 
 
-live: https://master--taichatbot.netlify.app/
+live: [https://master--taichatbot.netlify.app/](https://taichatbot.netlify.app/)
 
 
 npm install 

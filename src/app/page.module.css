@@ -154,12 +154,12 @@
 
 .typingAnimation {
   overflow: hidden;
-  border-right: 0.1em solid #4b6cfe;
   white-space: nowrap;
   animation: typing 1s forwards;
   width: 0;
   font-size: large;
   align-self: center;
+  text-wrap: balanced;
 }
 @keyframes typing {
   from {
@@ -169,7 +169,6 @@
     width: 100%;
   }
 }
-
 
 .icon {
   color: white;

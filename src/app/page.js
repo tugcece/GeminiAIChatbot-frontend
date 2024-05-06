@@ -124,7 +124,7 @@ export default function Home() {
                 className={styles.chatLogo}
               />
               <div className={styles.typingAnimation}>
-                {'I\'m thinking. It\'ll only take a few seconds....'}
+                {'Hmmm... I\'m thinking.'}
               </div>
             </div>
           )}
